@@ -1,0 +1,16 @@
+{
+  "generatedBy": "Microsoft.NET.Sdk.Functions-3.0.11",
+  "configurationSource": "attributes",
+  "bindings": [
+    {
+      "type": "serviceBusTrigger",
+      "connection": "SERVICE_BUS_CONNECTION_STRING",
+      "queueName": "elx",
+      "isSessionsEnabled": false,
+      "name": "myQueueItem"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "../bin/csharpguitarbugs-function.dll",
+  "entryPoint": "csharpguitarbugs_function.c.Run"
+}
